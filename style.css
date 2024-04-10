@@ -1,0 +1,817 @@
+* {
+  box-sizing: border-box;
+}
+
+/* media screen */
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a,
+  .topnav input[type="text"],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #e08888;
+    border-radius: 25px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(248, 248, 248);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  height: 90px;
+}
+
+.topnav a {
+  float: left;
+  color: rgb(95, 94, 94);
+  text-align: center;
+  margin-right: 2px;
+  letter-spacing: 0.5px;
+  padding-top: 35px;
+  padding-left: 73px;
+  font-size: 21px;
+}
+.logo {
+  float: left;
+  width: 207px;
+  padding-top: 25px;
+  margin-left: 145px;
+}
+
+.topnav a:link {
+  text-decoration: none;
+}
+
+.topnav a:visited {
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  text-decoration: underline red;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 9px;
+}
+
+.topnav a:active {
+  text-decoration: underline red;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 9px;
+}
+
+.topnav .search-container {
+  position: absolute;
+  top: 21px;
+  left: 900px;
+  /* float: right;
+    padding-top: 25px;
+    margin-right: 250px; */
+}
+
+.topnav input[type="text"] {
+  padding-top: 9px;
+  /* margin-top: 2px; */
+  font-size: 17px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  margin-right: 710px;
+  background: transparent;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar {
+  position: relative;
+  width: 40%;
+  max-width: 500px;
+  background: white;
+  border-style: solid;
+  border-color: rgb(224, 221, 221);
+  display: flex;
+  border-width: 1px;
+  margin-right: 200px;
+  align-items: center;
+  height: 53px;
+  border-radius: 50px;
+  padding: 3px 0px;
+  padding-bottom: 6px;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 10px 9px;
+  padding-bottom: 6px;
+  font-size: 20px;
+  color: #0a0a0a;
+}
+::placeholder {
+  position: relative;
+  left: 7px;
+  color: #949292;
+}
+.search-bar button {
+  position: relative;
+  right: 4px;
+  border: 0;
+  border-radius: 80%;
+  width: 30px;
+  height: 30px;
+  background: #e0dedd;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: white;
+}
+.icon-bell {
+  float: right;
+  position: absolute;
+  right: 174px;
+  top: 26px;
+  width: none;
+  height: none;
+  border-color: transparent;
+  /* display: flex; */
+  margin-right: 120px;
+  background-color: white;
+}
+.icon-button :hover {
+  cursor: pointer;
+  color: #949292;
+}
+
+.cover {
+  position: absolute;
+  right: 138px;
+  top: 23px;
+  width: 20%;
+  max-width: 110px;
+  background: transparent;
+  border-style: solid;
+  border-color: rgb(224, 221, 221);
+  display: flex;
+  border-width: 0.3px;
+  margin-right: 20px;
+  align-items: center;
+  border-radius: 50px;
+  padding: 3px 1px;
+}
+.cover button {
+  border: 0;
+  border-radius: 100%;
+  width: 30px;
+  height: 45px;
+  background: transparent;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 50px;
+  padding-top: 3px;
+}
+
+.side-bar {
+  position: fixed;
+  left: 100px;
+  top: 145px;
+  width: 390px;
+  height: 510px;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: rgb(224, 221, 221);
+  background-color: white;
+  border-radius: 3%;
+}
+.side-bar h4 {
+  position: relative;
+  top: 90px;
+  left: 60px;
+}
+.side-img {
+  position: relative;
+  left: 80px;
+  top: 30px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.side-h {
+  position: relative;
+  top: 40px;
+  margin-left: 62px;
+  margin-right: 56px;
+  background-color: white;
+}
+.side-dtl {
+  position: absolute;
+  top: 310px;
+  margin-left: 40px;
+  background-color: transparent;
+}
+.side button {
+  position: relative;
+  top: -13px;
+  left: -3px;
+  border: transparent;
+  background-color: transparent;
+  cursor: text;
+}
+.btn {
+  position: absolute;
+  left: -2px;
+  top: -15px;
+}
+.reg-bar {
+  float: right;
+  position: absolute;
+  display: flex;
+  background-color: white;
+  top: 145px;
+  left: 550px;
+  border-style: solid;
+  border-color: rgb(224, 221, 221);
+  border-width: 0.1px;
+  border-radius: 2%;
+  width: 1126px;
+  height: 1270px;
+}
+.bottom {
+  float: right;
+  position: absolute;
+  top: 1500px;
+  left: 1192px;
+  border-width: 1px;
+  border-color: transparent;
+  display: flex;
+  background-color: whitesmoke;
+  border-style: solid;
+  width: 1120px;
+  height: 250px;
+}
+/* .reg-container{
+    overflow: scroll;
+    top: -40px;
+  
+  } */
+.reg-title {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 756px;
+  height: 60px;
+  /* border:solid 1px rgb(26, 23, 23) ;  */
+}
+.form-cont {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  width: 756px;
+  height: 1000px;
+  /* border:solid 1px rgb(26, 23, 23) ;  */
+}
+.title {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  width: 760px;
+  height: 100px;
+  margin-top: 40px;
+  /* border:solid 1px rgb(26, 23, 23) ;  */
+}
+.title input {
+  height: 56px;
+  width: 756px;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 8px;
+  padding-left: 23px;
+  border-radius: 20px;
+  border-color: rgb(224, 221, 221);
+}
+::placeholder {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 2px;
+  padding-top: 25px;
+}
+.title label {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+}
+.work-status1 {
+  position: absolute;
+  display: flex;
+  height: 120px;
+  width: 370px;
+  margin-top: 8px;
+  padding-left: 23px;
+  border-radius: 20px;
+  border: solid 1px rgb(224, 221, 221);
+  cursor: pointer;
+}
+.work-status1 img {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  height: 110px;
+  width: 350px;
+}
+.work-status2 img {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  height: 110px;
+  width: 350px;
+}
+.work-status2 {
+  position: absolute;
+  left: 395px;
+  display: flex;
+  height: 120px;
+  width: 370px;
+  margin-top: 8px;
+  margin-left: -12px;
+  padding-left: 23px;
+  border-radius: 20px;
+  border: solid 1px rgb(224, 221, 221);
+  cursor: pointer;
+}
+.ccity {
+  position: relative;
+  top: 130px;
+  left: 0px;
+  width: 760px;
+  height: 100px;
+  margin-top: 40px;
+}
+.resume-container {
+  position: relative;
+  top: 0px;
+  left: 70px;
+  height: 100px;
+  width: 600px;
+  margin-top: 8px;
+  padding-left: 0px;
+}
+.resume-outer {
+  position: absolute;
+  top: 26px;
+  height: 40px;
+  width: 495px;
+  margin-top: 0px;
+  padding-left: 0px;
+  border: solid 1px rgb(224, 221, 221);
+  border-radius: 30px;
+}
+.resume-outer h4 {
+  position: absolute;
+  left: 186px;
+  font-size: 18px;
+  font-weight: 530;
+  font-style: normal;
+  top: -13px;
+  color: #aca8a8;
+}
+.resume-upload {
+  position: absolute;
+  /* top:26px; */
+  height: 40px;
+  width: 168px;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0px;
+  padding-left: 0px;
+  /* border: solid 1px rgb(41, 38, 38);  */
+  border-radius: 20px;
+  background-color: orangered;
+  cursor: pointer;
+}
+.resume-upload h4 {
+  position: absolute;
+  text-align: center;
+  top: -14px;
+  left: 18px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.resume-outer p {
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  font-size: 15.3px;
+  color: #a09b9b;
+  font-style: normal;
+  cursor: text;
+}
+.resume-upload input[type="file"] {
+  opacity: 0;
+  width: 168px;
+  /* height: 340px; */
+  cursor: pointer;
+}
+.update {
+  position: relative;
+  top: 25px;
+  left: 70px;
+  height: 50px;
+  width: 600px;
+  cursor: pointer;
+  /* border: solid 1px black; */
+}
+.update :hover{
+  color: #0a0a0a;
+}
+.update h3 {
+  position: absolute;
+  padding-left: 34px;
+  color: #a7a3a3;
+  font-style: normal;
+  font-weight: 400;
+}
+.update .check-box {
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.whatsApp-icon {
+  position: absolute;
+  top: -3px;
+  left: 294px;
+  width: 28px;
+}
+.whatsApp-icon h4 {
+  position: absolute;
+  top: -23px;
+  padding-left: 32px;
+  margin-bottom: 30px;
+  color: #c2bfbf;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+.term-c {
+  position: relative;
+  top: 65px;
+  left: 70px;
+  /* border: solid 1px black; */
+  font-size: 15px;
+  color: #a09b9b;
+  font-style: normal;
+  font-weight: 200;
+  cursor: text;
+}
+.reg-btn {
+  position: relative;
+  left: 70px;
+  cursor: pointer;
+}
+.reg-btn :hover{
+  background-color: rgb(38, 38, 231);
+}
+
+.reg-btn input {
+  position: relative;
+  top: 80px;
+  /* left: -70; */
+  height: 57px;
+  width: 165px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0px;
+  padding-left: 0px;
+  /* border: solid 1px rgb(41, 38, 38); */
+  border-radius: 50px;
+  border: solid 1px transparent;
+  background-color: rgb(192, 197, 241);
+  color: white;
+  cursor: pointer;
+}
+.reg-btn h4 {
+  position: absolute;
+  top: 40px;
+  /* text-align: center; */
+  bottom: -7px;
+  left: 24px;
+  color: white;
+  font-weight: bold;
+}
+.bottom {
+  position: relative;
+  top: 190px;
+  left: -40px;
+  /* border: solid 1px rgb(41, 38, 38); */
+  height: 60px;
+  width: 900px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: rgb(126, 126, 245);
+  cursor: pointer;
+}
+.rights {
+  position: relative;
+  top: 200px;
+  left: 380px;
+  /* border: solid 1px rgb(41, 38, 38);  */
+  height: 30px;
+  width: 600px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: rgb(109, 109, 117);
+  cursor: text;
+}
+.g-cont {
+  /* float: right; */
+  position: absolute;
+  top: 140px;
+  left: 750px;
+  width: 240px;
+  height: 286px;
+  /* border:solid 1px rgb(224, 221, 221) ; */
+}
+.g-btn {
+  position: absolute;
+  top: 110px;
+  left: 85px;
+  height: 55px;
+  width: 146px;
+  font-size: 18px;
+  font-style: normal;
+  margin-top: 0px;
+  padding-left: 0px;
+  border: solid 1px blue;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+.g-btn img {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+.g-cont h3 {
+  position: absolute;
+  top: 63px;
+  left: 95px;
+  color: #3d3636;
+}
+.g-cont p {
+  position: absolute;
+  top: 108px;
+  left: 41px;
+  color: #a09a9a;
+  font-weight: 200;
+  font-size: large;
+}
+.g-l1 {
+  position: absolute;
+  border: #e6dfdf 0.1px solid;
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+  height: 117px;
+  left: 50px;
+}
+.g-l2 {
+  position: absolute;
+  border: #e6dfdf 0.1px solid;
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+  height: 125px;
+  left: 50px;
+  bottom: 0px;
+}
+.flex {
+  position: relative;
+  left: -70px;
+  width: 1123px;
+  top: 160px;
+  height: 360px;
+  background-color: white;
+  border-color: rgb(202, 197, 197);
+  border-width: 0.1px;
+  border-radius: 4%;
+}
+.o-india h3 {
+  position: absolute;
+  right: 5px;
+  top: 170px;
+  color: #bbb8b7;
+}
+.o-india .c-box {
+  position: absolute;
+  right: 125px;
+  top: 180px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* HAMBURGER-MENU*/
+.sideProfile {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  border: solid 1px rgb(226, 226, 226);
+  display: flex;
+  background-color: white;
+  height: 808px;
+  width: 520px;
+  border-top-left-radius: 4%;
+  border-bottom-left-radius: 4%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.sideProfile img {
+  position: relative;
+  top: 30px;
+  left: 460px;
+  width: 26px;
+  height: 30px;
+  cursor: pointer;
+}
+.h-profile {
+  position: relative;
+  top: 60px;
+  left: 15px;
+  /* border: solid 1px black; */
+  width: 400px;
+  height: 150px;
+  cursor: pointer;
+}
+.h-profile img {
+  position: relative;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  /* border: solid 1px black; */
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.hp-detail {
+  position: relative;
+  top: -130px;
+  left: 120px;
+  width: 300px;
+  height: 150px;
+  /* border: solid 1px black; */
+}
+.h-profile p {
+  position: relative;
+  top: -10px;
+  margin-top: 2px;
+  font-size: 17px;
+}
+.p-line {
+  position: relative;
+  border-top: transparent;
+  top: -150px;
+  left: 0px;
+  width: 450px;
+  border: gray solid 0.1px;
+}
+.ham-middle h3 {
+  position: relative;
+  top: -150px;
+  left: 0px;
+  /* border:solid 1px black; */
+}
+.action-cont {
+  position: relative;
+  display: flex;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-right: 10px;
+  top: -150px;
+  left: 0px;
+  height: 160px;
+  width: 450px;
+  border: solid 1px rgb(250, 247, 247);
+  border-radius: 5%;
+  background-color: rgb(250, 250, 253);
+}
+.a-border {
+  position: relative;
+  top: 15px;
+  left: 25px;
+  border: 1px solid grey;
+  border-left: transparent;
+  height: 130px;
+}
+.search {
+  position: relative;
+  left: -10px;
+  /* border: solid 1px black; */
+  /* margin-left:-10px; */
+}
+.action {
+  position: relative;
+  padding-left: 60px;
+  /* border: solid 1px black; */
+}
+.h-icons {
+  position: relative;
+
+  top: -120px;
+  /* border: solid 1px black; */
+  color: #3d3c3c;
+  height: 350px;
+  width: 150;
+}
+.blog {
+  position: relative;
+  left: 0px;
+  display: flex;
+}
+.blog img {
+  position: relative;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.blog h3 {
+  position: relative;
+  left: 10px;
+  top: -20px;
+}
+
+.setting {
+  position: relative;
+  left: 0px;
+  display: flex;
+}
+.setting img {
+  position: relative;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.setting h3 {
+  position: relative;
+  left: 10px;
+  top: -20px;
+}
+
+.faqs {
+  position: relative;
+  left: 0px;
+  display: flex;
+}
+.faqs img {
+  position: relative;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.faqs h3 {
+  position: relative;
+  left: 10px;
+  top: -20px;
+}
+
+.logout {
+  position: relative;
+  left: 0px;
+  display: flex;
+}
+.logout img {
+  position: relative;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.logout h3 {
+  position: relative;
+  left: 10px;
+  top: -20px;
+}

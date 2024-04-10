@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <!-- <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+$(function(){
+  $("#header").load("common.html"); 
+
+});
+</script>  -->
+
+  <style>
+    /* Profile Page */
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="topnav">
+    <nav>
+
+      <img src="nkri logo.png" class="logo">
+
+      <a href="#">Jobs</a>
+      <a href="#">Companies</a>
+      <a href="#">Services</a>
+      <div class="search-container">
+        <form action="" class="search-bar">
+
+          <input type="text" placeholder="Search jobs here" name="search">
+          <button type="submit"><img src="srh.png" width="38px"></button>
+        </form>
+      </div>
+      <button type="button" class="icon-bell"><img src="bell.png" width="32px"></button>
+      <div class="container">
+        <form action="" class="cover">
+          <button type="submit"><img src="menu.png" width="33px"></button>
+          <img src="profile.png" width="36px" class="profile" onclick="showHam()">
+        </form>
+      </div>
+
+    </nav>
+  </div>
+
+
+  <!-- main content -->
+
+
+  <div class="side-bar">
+    <div class="side-img"><img src="side-bar..png" width="220px"></div>
+    <div class="side-h">
+      <h2>On registering, you can</h2>
+    </div>
+
+    <div class="side-dtl">
+
+      <form action="" class="side">
+        <button type="submit"><img src="right icon.png" width="18px" class="btn"></button>
+        <button type="text">
+          <p>
+          <h3>Build your profile and let recruiters<br>find you</h3>
+          </p>
+        </button>
+      </form>
+
+      <form action="" class="side">
+        <button type="submit"><img src="right icon.png" width="18px" class="btn"></button>
+        <button type="text">
+          <p>
+          <h3>Get job postings delivered right to<br>your email</h3>
+          </p>
+        </button>
+      </form>
+
+      <form action="" class="side">
+        <button type="submit"><img src="right icon.png" width="18px" class="btn"></button>
+        <button type="text">
+          <p>
+          <h3>Find a job and grow career</h3>
+          </p>
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <!-- <div class="right-cont"> -->
+
+
+  <diV class="reg-bar">
+
+    <div class="reg-title">
+      <h1>Find a job & grow your career</h1>
+    </div>
+
+    <div class="reg-container">
+
+
+      <form class="form-cont" action="#" onsubmit="return validation()">
+
+
+
+        <div class="title">
+          <label>Full name<input type="text" placeholder="What is your name?" id="user" autocomplete="off"
+              onkeyup="validateUserField()">
+            <span id="name"></span></labe><br>
+        </div>
+
+
+
+        <div class="title">
+          <label>Email ID<input type="email" placeholder="Tell us your Email ID" id="emid" autocomplete="off"
+              onkeyup="validateEmidField()">
+            <span id="mail"></span></labe><br>
+
+        </div>
+
+
+
+        <div class="title">
+          <label>Password<input type="password" placeholder="Create a Password for your account" id="pass"
+              autocomplete="off" onkeyup="validatePassField()">
+            <span id="password"></span></labe><br>
+
+        </div>
+
+
+
+        <div class="title">
+          <label>Mobile Number<input type="number" placeholder="Mobile Number" id="mno" autocomplete="off"
+              onkeyup="validateMnoField()">
+            <span id="mobileno"></span></labe><br>
+
+        </div>
+
+        <div class="title">
+
+          <label>Work status</label>
+
+          <div class="work-status1"><img src="ws.1.png" onclick="showDiv1()"></div>
+
+          <div class="work-status2"><img src="ws.2.png" onclick="showDiv2()"></div>
+
+          <!-- hide part -->
+
+          <div id="welcomeDiv" style="display:none;">
+
+            <div class="o-india"><input type="checkbox" class="c-box" onclick="showDiv3()">
+              <h3>Outside India</h3>
+            </div>
+
+            <div class="ccity">
+              <label>Current city<input type="text" placeholder="Mention the city you live in">
+              </label>
+            </div>
+
+            <div id="cctry" style="display:none;">
+              <div class="ccity">
+                <label>Current country<input type="text" placeholder="Mention the city where you're staying">
+                </label>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <!-- Resume Upload section -->
+
+          <div class="flex">
+
+            <div class="resume-container">
+
+              <label>Resume</label>
+
+              <div class="resume-outer">
+                <h4>DOC, DOCx, PDF, RTF | Max: 2 MB</h4>
+                <!-- <div class="resume-upload">  -->
+
+                <div class="resume-upload">
+                  <h4>Upload Resume</h4>
+                  <label><input type="file" accept=".pdf" value="Upload Resume"></label>
+                </div>
+                <p>Recruiters give first preference to candidates who have a resume</p>
+
+
+              </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- whatsApp -->
+
+            <div class="update" type="checkbox">
+
+              <input type="checkbox" class="check-box">
+
+              <h3>Send me important updates on<img src="whtsapp.jpg"
+                  class="whatsApp-icon">&ensp;&ensp;&ensp;&ensp;WhatsApp</h3>
+            </div>
+
+            <div class="term-c">
+              By clicking Register, you agree to the <span style="color: blue;">Terms and Conditions</span> & <span
+                style="color: blue;">Privacy Policy</span> of Naukri.com
+            </div>
+
+
+
+            <div class="reg-btn">
+
+              <input type="submit" value="Register now">
+            </div>
+            <!-- wsflex -->
+
+
+            <!-- bottom part -->
+            <div class="bottom">
+              <span>
+                About Us &ensp; <span style="color: grey;">|</span>
+              </span>
+              <span>
+                &ensp; Contact Us &ensp;<span style="color: grey;">|</span>
+              </span>
+              <span>
+                &ensp; FAQs &ensp; <span style="color: grey;">|</span>
+              </span>
+              <span>
+                &ensp; Terms and Conditions &ensp;<span style="color: grey;">|</span>
+              </span>
+              <span>
+                &ensp; Report a problem &ensp; <span style="color: grey;">|</span>
+              </span>
+              <span>
+                &ensp; Privacy Policy
+              </span>
+
+            </div>
+
+            <div class="rights">
+              <pre>All rights reserved © 2023 Info Edge India Ltd.</pre>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="g-cont">
+
+          <h3>Continue with</h3>
+          <div class="g-btn"><img src="google btn.png" width="110px"></div>
+
+          <div class="g-l1"></div>
+          <!-- <div class="g-or"></div> -->
+          <p>Or</p>
+          <div class="g-l2"></div>
+        </div>
+
+        <!-- HAMBURGER -->
+
+        <div id="ham" style="display:none;">
+          <div class="sideProfile">
+            <img src="close.png" onclick="closeHam()">
+            <div class="h-profile">
+              <img src="profile.png" onclick="window.location.href='common.html'">
+
+              <div class="hp-detail">
+                <h2>AMAN KUMAR</h2>
+                <P>B.tech/B.E.Civil at MITM Jamshedpur</P>
+                <h3 style="color: blue;">View & Update profile</h3>
+              </div>
+              <div class="p-line"></div>
+              <div class="ham-middle">
+                <h3>Your profile performance</h3>
+              </div>
+              <div class="action-cont">
+                <div class="search">
+                  <h1 style="padding-left: 70px;">7</h1>
+                  <h3 style="font-weight: 200;">Search Appearances</h3>
+                  <h4 style="color: blue; padding-left: 47px;">view all</h4>
+                </div>
+                <div class="a-border">
+                </div>
+                <div class="action">
+                  <h1 style="padding-left: 60px;">2</h1>
+                  <h3 style="font-weight: 200;">Recruiter Actions</A></h3>
+                  <h4 style="color: blue;padding-left: 40px;">view all</h4>
+                </div>
+              </div>
+              <div class="h-icons">
+                <div class="blog">
+                  <div><img src="Blog.png"></div>
+                  <div>
+                    <h3>Naukri Blog</h3>
+                  </div>
+                </div>
+                <div class="setting">
+                  <div><img src="Setting.png"></div>
+                  <div>
+                    <h3>Setting</h3>
+                  </div>
+                </div>
+                <div class="faqs">
+                  <div><img src="FaQs.png"></div>
+                  <div>
+                    <h3>FAQs</h3>
+                  </div>
+                </div>
+                <div class="logout">
+                  <div><img src="log out.png"></div>
+                  <div>
+                    <h3>Logout</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+    </div>
+
+
+  </div>
+
+
+  </form>
+
+  </div>
+
+
+  </diV>
+
+
+</body>
+
+</html>
